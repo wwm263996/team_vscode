@@ -7,6 +7,10 @@
     <title>円</title>
 </head>
 <body>
-    
+    <h4>半径入力</h4>
+        <form action="{{url_for('circle_result')}}" method="get">
+            <input type="text" name=hankei placeholder="半径を入力してください">
+            <input type="submit" value="計算する">
+        </form>
 </body>
 </html>
