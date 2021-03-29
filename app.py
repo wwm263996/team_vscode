@@ -12,6 +12,13 @@ def top():
 def circle():
     return render_template("circle.html")
 
+@app.route("/circle_2")
+def circle_2():
+    hankei = request.args.get("hankei")
+    ensyu = float(hankei) * 2 * 3.14
+    menseki = float(hankei) * float(hankei) * 3.14
+    return render_template("circle_2.html",hankei=hankei, ensyu=ensyu, menseki=menseki)
+    
 
 # 給与計算アプリ
 @app.route("/salary")
