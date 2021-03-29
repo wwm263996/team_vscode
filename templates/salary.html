@@ -7,6 +7,13 @@
     <title>給与</title>
 </head>
 <body>
-    
+    <form action="{{url_for('salary_2')}}" method="get">
+        時給：<input type="number" name="time_money">円
+        <br>
+        勤務時間：<input type="number" name="time">時
+        <br>
+        <input type="submit" value="出力">
+
+    </form>
 </body>
 </html>
