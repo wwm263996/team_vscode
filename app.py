@@ -14,6 +14,7 @@ def circle():
 
 
 # 給与計算アプリ
+@app.route("/salary")
 def salary():
     return render_template("salary.html")
 
